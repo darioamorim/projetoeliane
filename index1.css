@@ -1,0 +1,494 @@
+*{margin: 0; padding: 0;}
+
+/* inicio */
+
+#container{
+    height: 200px;
+    width: 100%;
+    background-color: #cccccc;
+    border-bottom: solid 1px black;
+}
+.cabecario{
+    height: 200px;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    float: left;
+    border-radius: 0px 0px 200px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    margin-top: -200px;
+    
+}
+
+.cabecario img{
+    height: 78%;
+    width: 50%;
+    margin: 4%;
+    border-radius: 50px;
+}
+
+.menufoto{
+    position: static;
+    float: inherit;
+    background-color: rgb(102, 102, 204);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    animation-name: pulse;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+    background-image: url(imagens/foto3.png);
+  }
+
+    100% {
+        background-image: url(imagens/icone_logo.png);
+    }
+}
+
+
+.menu { 
+    clear: both;
+    width: 100%;
+    height: 25%;
+    background-color: #222;
+    font-family: "Arial";
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+nav a{
+    padding: 15px;  
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+nav ul li:hover ul {
+    visibility: visible;
+}
+nav a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+nav ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+nav ul ul li a {
+    background-color: #069;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#bt_menu {
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+@media(max-width: 800px){
+    
+    label[for="bt_menu"]{
+    display: block;
+    }
+    #bt_menu:checked ~ nav{
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    nav ul li {
+        width: 100%;
+        float: none;
+    }
+    nav ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    nav ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+        
+    }
+}
+
+.corpo {
+    clear: both;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 200px;
+    margin: 0 auto;
+    padding: 2px 20px 2px;
+    
+}
+
+/* caldo 1 */
+
+#imagen1 {
+    float: left;
+}
+.caldo1 {
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+.caldo1 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo1 p{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 450px; 
+}
+
+/* caldo 2 */
+
+.caldo2 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px; 
+}
+#imagen2 {
+    float: right;
+    
+}
+.caldo2 h2{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-right: 750px;
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo2 p{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-left: 70px;
+}
+
+/* caldo 3 */
+
+.caldo3 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+    
+}
+#imagen3 {
+    float: left;
+}
+.caldo3 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo3 p{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 450px; 
+}
+
+/* caldo 4 */
+
+.caldo4{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px; 
+}
+#imagen4 {
+    float: right;
+}
+.caldo4 h2{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-right: 750px;
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo4 p{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-left: 70px;
+}
+
+/* caldo 5 */
+
+.caldo5 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+    
+}
+#imagen5 {
+    float: left;
+}
+.caldo5 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo5 p{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 455px; 
+}
+
+/* caldo 6 */
+
+.caldo6{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px; 
+}
+#imagen6 {
+    float: right;
+}
+.caldo6 h2{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-right: 750px;
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo6 p{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-left: 70px;
+}
+
+/* caldo 7 */
+
+.caldo7 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+    
+}
+#imagen7 {
+    float: left;
+}
+.caldo7 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo7 p{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 450px; 
+}
+
+/* caldo 8 */
+
+.caldo8{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px; 
+}
+#imagen8 {
+    float: right;
+}
+.caldo8 h2{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-right: 750px;
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo8 p{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-left: 70px;
+}
+
+/* caldo 9 */
+
+.caldo9 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+    
+}
+#imagen9 {
+    float: left;
+}
+.caldo9 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo9 p{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 450px; 
+}
+
+/* caldo 10 */
+
+.caldo10{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px; 
+}
+#imagen10 {
+    float: right;
+}
+.caldo10 h2{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-right: 750px;
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo10 p{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-right: 250px;
+    padding-left: 70px;
+}
+
+/* caldo 11 */
+
+.caldo11 {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 5px;  
+}
+#imagen11 {
+    float: left;
+}
+.caldo11 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 420px; 
+    text-shadow: 2px 2px 2px black;
+    background-color: beige;
+}
+.caldo11 p{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 450px; 
+}
+
+/* final */
+
+.final{
+    position: absolute;
+    width: 100%;
+    opacity: 50%;
+    float: left;
+}
+.contato{
+    font: "Impact";
+    padding-top: 40px;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+.contato h1{
+    padding: 5px;
+    font-size: 25px;
+}
+.contato h2{
+    padding: 5px;
+    font-size: 15px;
+}
+.contato a{
+    font: "Impact";
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
